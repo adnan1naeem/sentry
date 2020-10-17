@@ -12,10 +12,10 @@ import Source from './source';
 import {StatusBar} from 'react-native';
 
 Sentry.init({
-  release: 'test',
-  dist: '1.1',
-  dsn:
-    'https://2c56364e2b1b46599cf7590950b1cb93@o460512.ingest.sentry.io/5460868',
+  release: 'pocRelease',
+  enableAutoSessionTracking: true,
+  dist: '1.3',
+  dsn:'https://2c56364e2b1b46599cf7590950b1cb93@o460512.ingest.sentry.io/5460868',
 });
 
 const App: () => React$Node = () => {

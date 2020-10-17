@@ -1,0 +1,8 @@
+auth.token=aed0e5b20c8f11eb8e974201c0a8d03a;
+defaults.url=https://sentry.io/
+defaults.org=fatimaindustry
+defaults.project=react-native
+cli.executable=node_modules/sentry-cli-binary/bin/sentry-cli
+
+[auth]
+token=7de4dd8a7f3e4d15a39e75de9f9f75669fa0b10b90d24e698f5c1fdc0b6654e9

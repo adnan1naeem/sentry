@@ -5,7 +5,7 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "sentry": "node_modules/@sentry/cli/bin/sentry-cli  --auth-token 7de4dd8a7f3e4d15a39e75de9f9f75669fa0b10b90d24e698f5c1fdc0b6654e9 releases -p 'react-native'  --org 'fatimaindustry'  files mevris upload-sourcemaps ./android.main.bundle.map --strip-prefix ./App.js",
+    "sentry": "node_modules/@sentry/cli/bin/sentry-cli  releases   -p 'react-native'  --org 'fatimaindustry'  files pocRelease upload-sourcemaps ./mevris.bundle.android.map  --rewrite --strip-prefix ./App.js",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
