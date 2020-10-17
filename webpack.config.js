@@ -4,6 +4,11 @@ module.exports = {
   entry: {
     app: './App.js',
   },
+  plugins: [
+    new SentryPlugin({
+      filenameTransform: filename => '~/' + filename
+    })
+  ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
