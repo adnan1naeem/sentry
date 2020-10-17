@@ -1,4 +1,3 @@
-auth.token=aed0e5b20c8f11eb8e974201c0a8d03a;
 defaults.url=https://sentry.io/
 defaults.org=fatimaindustry
 defaults.project=react-native
