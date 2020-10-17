@@ -2,13 +2,9 @@ const SentryWebpackPlugin = require('@sentry/webpack-plugin');
 const path = require('path');
 module.exports = {
   entry: {
-    app: './App.js',
+    app: './index.android.bundle',
   },
-  plugins: [
-    new SentryPlugin({
-      filenameTransform: filename => '~/' + filename
-    })
-  ],
+  
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
