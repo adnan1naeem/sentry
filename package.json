@@ -7,7 +7,7 @@
     "release":"react-native run-android --variant=release",
     "ios": "react-native run-ios",
     "androidSourceMap": "react-native bundle   --dev false   --platform android   --entry-file index.js   --bundle-output poc.bundle --sourcemap-output poc.bundle.android.map",
-    "sentry": "node_modules/@sentry/cli/bin/sentry-cli  releases   -p 'react-native'  --org 'fatimaindustry'  files pocRelease upload-sourcemaps ./poc.bundle.android.map  ./poc.bundle  ./index.android.bundle.map  ./index.android.bundle --rewrite --strip-prefix ./index.android.bundle",
+    "sentry": "node_modules/@sentry/cli/bin/sentry-cli  releases   -p 'react-native'  --org 'fatimaindustry'  files pocRelease upload-sourcemaps --dist 1 /Users/adnan/Desktop/sentry/android/app/build/generated/sourcemaps/react/release/index.android.bundle.map  /Users/adnan/Desktop/sentry/android/app/build/generated/assets/react/release/index.android.bundle --rewrite --strip-prefix ./index.android.bundle",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."

@@ -14,7 +14,7 @@ import {StatusBar} from 'react-native';
 Sentry.init({
   release: 'pocRelease',
   enableAutoSessionTracking: true,
-  dist: 'index.android.bundle',
+  dist: 1,
   dsn:'https://2c56364e2b1b46599cf7590950b1cb93@o460512.ingest.sentry.io/5460868',
 });
 
